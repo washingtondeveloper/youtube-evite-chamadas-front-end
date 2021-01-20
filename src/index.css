@@ -1,13 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  width: 75%;
+  margin: auto;
+  padding-top: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 500px;
+}
+
+.drinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drink {
+  width: 300px;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.drink__image {
+  width: 100%;
+  height: 300px;
+}
+
+.drink__image--default {
+  border: 5px solid #ccc;
+  border-radius: 5px;
+}
+
+.selected-drink {
+  width: 300px;
+}
+
+.selected-drink__image {
+  width: 100%;
+  height: 300px;
+}
+
+.selected-drink__image--active {
+  border: 5px solid #f56565;
+  border-radius: 5px;
 }
